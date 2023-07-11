@@ -3,7 +3,7 @@ const express = require('express');
 
 connectToMongo();
 const app = express()
-const port = 4000
+const port = 1330
 
 app.use(express.json()); // Used to send data in json format
 
