@@ -3,7 +3,7 @@ const express = require('express');
 
 connectToMongo();
 const app = express()
-const port = 1330
+const port = 4000
 
 app.use(express.json()); // Used to send data in json format
 
@@ -14,5 +14,5 @@ app.use('/api/notes',require('./routes/notes'));// it is invoked when request is
 
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`iNotebook backend listening at http://localhost:${port}`)
 }) 
